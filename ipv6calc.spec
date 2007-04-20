@@ -1,6 +1,6 @@
 %define name ipv6calc
 %define version 0.70.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Utility to manipulate IPv6 addresses
 Name: %{name}
@@ -37,6 +37,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc CREDITS README TODO USAGE
+%doc CREDITS README TODO USAGE doc/ipv6calc.html
 %{_bindir}/ipv6*
 %{_mandir}/man8/*.8*
