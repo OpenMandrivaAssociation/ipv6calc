@@ -1,6 +1,6 @@
 %define name ipv6calc
 %define version 0.71.0
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: Utility to manipulate IPv6 addresses
 Name: %{name}
