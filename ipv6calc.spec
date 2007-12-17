@@ -11,7 +11,6 @@ Patch0:	 ipv6calc-0.70.0-getopt.patch
 License: GPL
 Group: System/Base
 Url: http://www.deepspace6.net/projects/ipv6calc.html
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 ipv6calc is a small but powerful utility written in the C programming
