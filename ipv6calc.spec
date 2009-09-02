@@ -1,7 +1,7 @@
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
 Version:	0.72.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2
 Group:		System/Base
 URL:		http://www.deepspace6.net/projects/ipv6calc.html
