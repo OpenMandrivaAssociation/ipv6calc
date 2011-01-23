@@ -6,7 +6,7 @@ License:	GPLv2
 Group:		System/Base
 URL:		http://www.deepspace6.net/projects/ipv6calc.html
 Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
-Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.sig
+Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
 Patch0:		ipv6calc-0.72.0-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
