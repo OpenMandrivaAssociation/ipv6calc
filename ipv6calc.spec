@@ -1,6 +1,6 @@
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
-Version:	0.90.0
+Version:	0.92.0
 Release:	%mkrel 1
 License:	GPLv2
 Group:		System/Base
