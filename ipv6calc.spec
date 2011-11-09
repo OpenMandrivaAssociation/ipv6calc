@@ -11,6 +11,7 @@ Patch0:		ipv6calc-0.72.0-fix-str-fmt.patch
 BuildRequires:	wget
 BuildRequires:	aggregate
 BuildRequires:	GeoIP-devel
+BuildRequires:	perl-XML-Simple
 #BuildRequires:	ip2location-devel ?
 Requires:	geoip
 
