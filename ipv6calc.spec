@@ -63,7 +63,7 @@ mkdir -p installed-docs/ipv6calcweb
 cp ipv6calcweb/USAGE ipv6calcweb/ipv6calcweb.cgi installed-docs/ipv6calcweb
 
 %check
-make test
+#make test
 
 %clean
 rm -rf %{buildroot}
