@@ -1,13 +1,12 @@
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
-Version:	0.92.0
-Release:	%mkrel 1
+Version:	0.93.1
+Release:	1
 License:	GPLv2
 Group:		System/Base
 URL:		http://www.deepspace6.net/projects/ipv6calc.html
 Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
-Patch0:		ipv6calc-0.72.0-fix-str-fmt.patch
 BuildRequires:	wget
 BuildRequires:	aggregate
 BuildRequires:	GeoIP-devel
@@ -25,7 +24,6 @@ program.
 %prep
 
 %setup -q
-%patch0 -p1 -b .format_not_a_string_literal_and_no_format_arguments
 
 %build
 %configure2_5x \
@@ -38,7 +36,6 @@ program.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 ## Install examples and helper files to temporary dir
@@ -65,11 +62,7 @@ cp ipv6calcweb/USAGE ipv6calcweb/ipv6calcweb.cgi installed-docs/ipv6calcweb
 %check
 #make test
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc CREDITS README TODO USAGE doc/ipv6calc.html installed-docs/*
 %{_bindir}/ipv6*
 %{_mandir}/man8/*.8*
