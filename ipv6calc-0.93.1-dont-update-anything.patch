@@ -1,0 +1,32 @@
+diff --git a/databases/ieee-oui/Makefile b/databases/ieee-oui/Makefile
+index dc475e5..4521f66 100644
+--- a/databases/ieee-oui/Makefile
++++ b/databases/ieee-oui/Makefile
+@@ -19,9 +19,10 @@ create:
+ 		./create_ieee_oui_headerfile.pl $(FILE)
+ 
+ update:
+-		echo "Download new version of file"
+-		wget $(BASEURL)$(FILE) --timestamp
+-		${MAKE} create
++		# nonono
++		#echo "Download new version of file"
++		#wget $(BASEURL)$(FILE) --timestamp
++		#${MAKE} create
+ 
+ updateclean:
+ 		echo "Remove header file"
+diff --git a/databases/registries/update-registries.sh b/databases/registries/update-registries.sh
+index b23e682..b9bf581 100755
+--- a/databases/registries/update-registries.sh
++++ b/databases/registries/update-registries.sh
+@@ -31,6 +31,9 @@ END
+ 
+ echo "Download new version of files"
+ 
++echo "STOP IT, STOP IT RIGHT NOW"
++exit 0
++
+ get_urls | while read subdir url filename format flag; do
+ 	echo "Check: $subdir"
+ 	if [ ! -d "$subdir" ]; then
