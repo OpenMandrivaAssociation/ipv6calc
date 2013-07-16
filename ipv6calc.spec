@@ -9,7 +9,7 @@ Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.g
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
 Patch0:		ipv6calc-0.93.1-dont-update-anything.patch
 BuildRequires:	wget
-BuildRequires:	aggregate
+# BuildRequires:	aggregate
 BuildRequires:	GeoIP-devel
 BuildRequires:	perl-XML-Simple
 #BuildRequires:	ip2location-devel ?
