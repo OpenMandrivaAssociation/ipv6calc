@@ -1,11 +1,11 @@
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
-Version:	0.94.1
-Release:	9
+Version:	0.97.4
+Release:	1
 License:	GPLv2
 Group:		System/Base
 URL:		http://www.deepspace6.net/projects/ipv6calc.html
-Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.bieringer.de:21/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
 Patch0:		ipv6calc-0.93.1-dont-update-anything.patch
 BuildRequires:	wget
