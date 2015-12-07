@@ -1,13 +1,15 @@
+%define _disable_ld_no_undefined 1
+%define _disable_lto 1
+
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
-Version:	0.94.1
-Release:	11
+Version:	0.99.1
+Release:	1
 License:	GPLv2
 Group:		System/Base
 URL:		http://www.deepspace6.net/projects/ipv6calc.html
 Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
-Patch0:		ipv6calc-0.93.1-dont-update-anything.patch
 BuildRequires:	wget
 # BuildRequires:	aggregate
 BuildRequires:	GeoIP-devel
@@ -25,15 +27,14 @@ program.
 %prep
 
 %setup -q
-%patch0 -p1 -b .dont-update-anything~
 
 %build
+export LDFLAGS=-Wl,--allow-multiple-definition 
+export CFLAGS=-Wno-error
+
 %configure2_5x \
 	--enable-geoip \
 	--with-geoip-ipv4-default-file=%{_datadir}/GeoIP/GeoIP.dat
-
-#update databases
-%make update
 
 %make
 
@@ -68,3 +69,4 @@ cp ipv6calcweb/USAGE ipv6calcweb/ipv6calcweb.cgi installed-docs/ipv6calcweb
 %doc CREDITS README TODO USAGE doc/ipv6calc.html installed-docs/*
 %{_bindir}/ipv6*
 %{_mandir}/man8/*.8*
+%{_datadir}/ipv6calc
