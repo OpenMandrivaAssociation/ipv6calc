@@ -1,6 +1,3 @@
-removed_sources:
-  ipv6calc-0.93.1.tar.gz: 8cd23ed0bee03d79c70662e64ab4c7aae1219439
-  ipv6calc-0.94.1.tar.gz: c36689ed84472bb39897167fea14529b06da4647
 sources:
-  ipv6calc-0.99.1.tar.gz: a87f8cb96ab828d234d737270dd7ba606fcc9505
-  ipv6calc-0.99.1.tar.gz.asc: 5ee075bfb8cb3e3830e0e97df29dffbe8b9f03c7
+  ipv6calc-2.1.1.tar.gz: 61ce6a77136ea08c7cf216417db4420f72e333d3
+  ipv6calc-2.1.1.tar.gz.asc: 38c1fe3d95a1171cf52977c747a8ecdd981f204c
