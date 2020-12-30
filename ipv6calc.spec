@@ -3,7 +3,7 @@
 
 Summary:	Utility to manipulate IPv6 addresses
 Name:		ipv6calc
-Version:	2.2.0
+Version:	3.0.0
 Release:	1
 License:	GPLv2
 Group:		System/Base
