@@ -7,7 +7,7 @@ Version:	4.1.0
 Release:	1
 License:	GPLv2
 Group:		System/Base
-URL:		http://www.deepspace6.net/projects/ipv6calc.html
+URL:		https://www.deepspace6.net/projects/ipv6calc.html
 Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
 BuildRequires:	wget
