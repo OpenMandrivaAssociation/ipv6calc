@@ -10,6 +10,11 @@ Group:		System/Base
 URL:		https://www.deepspace6.net/projects/ipv6calc.html
 Source0:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz
 Source1:	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/%{name}-%{version}.tar.gz.asc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	wget
 # BuildRequires:	aggregate
 BuildRequires:	GeoIP-devel
